@@ -23,3 +23,40 @@ rails webpacker:install:angular
 rails webpacker:install:svelte
 
 ```
+
+## Models
+
+```puml
+@startuml 
+
+entity menu {
+    * id
+    ---
+    * foo
+}
+
+entity food_item {
+    * id
+    ---
+    * name
+    * price
+    * description
+    * category
+}
+
+entity food_item {
+
+}
+
+
+food_item }|--|| menu
+
+@enduml
+```
+
+Menu:
+- name
+- restaurant it belong to
+- menu item IDs
+
+Menu Item:
