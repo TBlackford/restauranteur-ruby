@@ -55,6 +55,7 @@ food_item }|--|| menu
 ```
 
 Menu:
+
 - name
 - restaurant it belong to
 - menu item IDs

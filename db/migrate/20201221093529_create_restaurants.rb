@@ -1,9 +1,10 @@
 class CreateRestaurants < ActiveRecord::Migration[6.0]
-  def change
-    create_table :restaurants do |t|
-      t.string :name
+    def change
+        create_table :restaurants do |t|
+            t.string :name
+            t.integer "user_id", null: false
 
-      t.timestamps
+            t.timestamps
+        end
     end
-  end
 end
